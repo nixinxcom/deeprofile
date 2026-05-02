@@ -1,0 +1,113 @@
+{
+  "profileId": "alain-rivera",
+  "owner": {
+    "name": "Alain Rivera",
+    "tagline": "Operations & Business Transformation",
+    "positioning": "I help turn growing operations into structured, scalable systems through process design, performance visibility, and disciplined execution.",
+    "summary": "Operations and business transformation professional with experience across corporate performance, entrepreneurial execution, and multi-site operational scaling in Canada. My work connects process structure, systems implementation, KPI logic, and practical execution to improve visibility, control, and business performance."
+  },
+  "projects": [
+    {
+      "id": "canada-multisite-transformation",
+      "title": "Multi-site Operations Transformation",
+      "scope": "Canada · Hospitality group operations",
+      "context": "Growing hospitality operations with increasing volume, more service points, and the need for stronger execution control.",
+      "problem": "Daily operations depended too much on informal coordination, limited visibility, and fragmented systems.",
+      "actions": [
+        "Expanded and structured operating capacity across locations.",
+        "Implemented POS, KDS, network, CCTV, and delivery platform workflows.",
+        "Built practical reporting logic for revenue, costs, service flow, and operational decisions."
+      ],
+      "result": "Supported revenue growth from approximately CAD $1.79M in 2023 to CAD $2.52M in 2025 while improving operational visibility and scalability."
+    },
+    {
+      "id": "hsbc-performance-kpis",
+      "title": "Business Performance & KPI Architecture",
+      "scope": "HSBC · Business performance environment",
+      "context": "Corporate performance environment involving planning, targets, incentives, reporting, and executive-facing analysis.",
+      "problem": "Performance conversations required clearer KPI structures, consistent measurement, and better visibility across business areas.",
+      "actions": [
+        "Worked with AOPs, KPIs, incentive logic, and performance reporting structures.",
+        "Supported management visibility through structured analysis and reporting discipline.",
+        "Connected business activity, performance indicators, and decision-making needs."
+      ],
+      "result": "Built a strong foundation in business performance management, executive communication, and structured operational analysis."
+    },
+    {
+      "id": "inncomext-import-retail-expansion",
+      "title": "Retail Expansion & Import Operations",
+      "scope": "INNCOMEXT · Entrepreneurship and retail operations",
+      "context": "Entrepreneurial business environment involving retail execution, sourcing, logistics, and expansion decisions.",
+      "problem": "The business needed reliable sourcing, import coordination, operating discipline, and scalable commercial execution.",
+      "actions": [
+        "Coordinated product sourcing and supplier follow-up with partners in China.",
+        "Supported import processes from supplier selection through shipment and border clearance follow-up.",
+        "Managed operational execution across retail and commercial growth activities."
+      ],
+      "result": "Developed hands-on ownership across sourcing, logistics, retail operations, and business expansion under real operating pressure."
+    },
+    {
+      "id": "nixinx-digital-systems-thinking",
+      "title": "Structured Digital Systems Thinking",
+      "scope": "NIXINX · Business systems and product thinking",
+      "context": "Independent work focused on translating business operations into structured digital workflows and scalable user experiences.",
+      "problem": "Many small and growing businesses lack simple systems to organize content, operations, customer interaction, and execution.",
+      "actions": [
+        "Designed structured concepts for business-facing PWAs, workflow control, and operational interfaces.",
+        "Applied operations logic to digital systems, user flows, and scalable service delivery models.",
+        "Connected business needs with practical technology decisions without overcomplicating the user experience."
+      ],
+      "result": "Reinforced the bridge between operations transformation, product thinking, and practical digital execution."
+    }
+  ],
+  "timeline": [
+    {
+      "stage": "Corporate Foundation",
+      "company": "HSBC",
+      "text": "Built experience in business performance, KPI structures, planning cycles, incentives, and executive-facing analysis."
+    },
+    {
+      "stage": "Entrepreneurial Execution",
+      "company": "INNCOMEXT",
+      "text": "Applied ownership in sourcing, imports, retail operations, logistics, and business expansion."
+    },
+    {
+      "stage": "Operational Transformation",
+      "company": "Canada · Multi-site Hospitality",
+      "text": "Led practical transformation through systems, reporting, process structure, and scalable execution across growing operations."
+    },
+    {
+      "stage": "Digital Systems Thinking",
+      "company": "NIXINX",
+      "text": "Extended the same operating mindset into structured digital workflows, PWA concepts, and business-facing systems."
+    }
+  ],
+  "capabilities": [
+    {
+      "title": "Operations Transformation",
+      "text": "Turning fragmented day-to-day execution into structured, repeatable, and scalable operating models."
+    },
+    {
+      "title": "Systems Implementation",
+      "text": "Introducing practical tools and workflows that improve coordination, visibility, and control."
+    },
+    {
+      "title": "Business Performance & KPIs",
+      "text": "Designing performance logic that connects activity, targets, incentives, and management decisions."
+    },
+    {
+      "title": "Data & Decision Making",
+      "text": "Transforming operational information into useful dashboards, reports, and decision support."
+    },
+    {
+      "title": "Multi-site Execution",
+      "text": "Coordinating growth across locations while maintaining consistency, responsiveness, and accountability."
+    }
+  ],
+  "aiRules": [
+    "Answer only from this professional profile context.",
+    "Do not invent employers, dates, metrics, technologies, certifications, or responsibilities.",
+    "Keep answers concise, professional, and defensible in an interview.",
+    "If the context does not contain enough information, say that the profile does not provide enough detail."
+  ]
+}

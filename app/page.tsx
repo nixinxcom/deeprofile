@@ -1,65 +1,127 @@
-import Image from "next/image";
+'use client';
+
+import { useEffect, useState } from 'react';
+
+type PublicProfile = {
+  hero: {
+    name: string;
+    tagline: string;
+    summary: string;
+    positioning: string[];
+  };
+  selectedProjects: {
+    id: string;
+    title: string;
+    context: string;
+    problem: string;
+    action: string[];
+    result: string;
+  }[];
+  timeline: {
+    id: string;
+    title: string;
+    description: string;
+  }[];
+  capabilities: {
+    id: string;
+    title: string;
+    description: string;
+  }[];
+};
 
 export default function Home() {
-  return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+  const [data, setData] = useState<PublicProfile | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch('/api/profile/context')
+      .then(res => res.json())
+      .then(res => {
+        setData(res.publicProfile);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading || !data) {
+    return (
+      <main style={{ padding: '40px', color: '#fff', background: '#0b0b0b', minHeight: '100vh' }}>
+        Loading profile...
       </main>
-    </div>
+    );
+  }
+
+  return (
+    <main style={{ padding: '40px', background: '#0b0b0b', color: '#fff', minHeight: '100vh' }}>
+      
+      {/* HERO */}
+      <section style={{ marginBottom: '60px' }}>
+        <h1 style={{ fontSize: '32px', marginBottom: '10px' }}>{data.hero.name}</h1>
+        <h2 style={{ fontSize: '18px', opacity: 0.7 }}>{data.hero.tagline}</h2>
+
+        <p style={{ marginTop: '20px', maxWidth: '600px', lineHeight: '1.6' }}>
+          {data.hero.summary}
+        </p>
+
+        <div style={{ marginTop: '20px' }}>
+          {data.hero.positioning.map((p, i) => (
+            <p key={i} style={{ opacity: 0.6 }}>{p}</p>
+          ))}
+        </div>
+      </section>
+
+      {/* PROJECTS */}
+      <section style={{ marginBottom: '60px' }}>
+        <h2 style={{ marginBottom: '20px' }}>Selected Projects</h2>
+
+        {data.selectedProjects.map(p => (
+          <div key={p.id} style={{ marginBottom: '30px' }}>
+            <h3>{p.title}</h3>
+            <p><strong>Context:</strong> {p.context}</p>
+            <p><strong>Problem:</strong> {p.problem}</p>
+
+            <div>
+              <strong>Action:</strong>
+              <ul>
+                {p.action.map((a, i) => (
+                  <li key={i}>{a}</li>
+                ))}
+              </ul>
+            </div>
+
+            <p><strong>Result:</strong> {p.result}</p>
+          </div>
+        ))}
+      </section>
+
+      {/* TIMELINE */}
+      <section style={{ marginBottom: '60px' }}>
+        <h2 style={{ marginBottom: '20px' }}>Professional Timeline</h2>
+
+        {data.timeline.map(t => (
+          <div key={t.id} style={{ marginBottom: '20px' }}>
+            <h3>{t.title}</h3>
+            <p>{t.description}</p>
+          </div>
+        ))}
+      </section>
+
+      {/* CAPABILITIES */}
+      <section style={{ marginBottom: '60px' }}>
+        <h2 style={{ marginBottom: '20px' }}>Capabilities</h2>
+
+        {data.capabilities.map(c => (
+          <div key={c.id} style={{ marginBottom: '15px' }}>
+            <strong>{c.title}</strong>
+            <p style={{ opacity: 0.7 }}>{c.description}</p>
+          </div>
+        ))}
+      </section>
+
+      {/* AI (placeholder) */}
+      <section style={{ marginTop: '80px', opacity: 0.6 }}>
+        <p>Ask more about this profile (AI coming next)</p>
+      </section>
+
+    </main>
   );
 }

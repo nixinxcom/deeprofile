@@ -1,0 +1,131 @@
+{
+  "profileId": "alain-rivera",
+  "hero": {
+    "name": "Alain Rivera",
+    "tagline": "Operations & Business Transformation",
+    "summary": "I help turn growing operations into structured, scalable systems through process design, performance visibility, and disciplined execution.",
+    "positioning": [
+      "Operations and business transformation professional with experience across corporate performance, entrepreneurship, and multi-site operations in Canada.",
+      "My work connects execution, systems, KPIs, and practical decision-making so teams can operate with more clarity and control."
+    ]
+  },
+  "selectedProjects": [
+    {
+      "id": "canada-operational-transformation",
+      "title": "Multi-site Operational Transformation in Canada",
+      "sourceCodes": ["CH-01", "CH-08", "CH-09", "CH-10", "CH-11", "CH-20", "CH-23", "CH-27", "CH-28"],
+      "context": "Owner-operated hospitality group growing across multiple locations and operating areas.",
+      "problem": "Operations were expanding faster than the structure, systems, and performance visibility needed to manage them consistently.",
+      "action": [
+        "Implemented and coordinated operating systems across POS, inventory, KDS, delivery platforms, pricing, reporting, and infrastructure.",
+        "Built practical KPI and MIS visibility to support better operational and management decisions.",
+        "Supported capacity expansion and execution control across a growing multi-site environment."
+      ],
+      "result": "Helped move the operation from fragmented execution toward scalable systems, stronger visibility, and measurable revenue growth under structured operations.",
+      "metrics": ["Multi-site operating environment", "POS / KDS / inventory / delivery integration", "Revenue growth tracked through 2023–2025 history"]
+    },
+    {
+      "id": "hsbc-business-performance",
+      "title": "Business Performance, KPIs and Incentive Architecture at HSBC",
+      "sourceCodes": ["FI-18", "FI-19", "FI-20", "FI-21", "FI-22", "FI-23", "FI-24"],
+      "context": "Corporate banking environment supporting executive-level planning, performance management, and business steering.",
+      "problem": "Business units required structured targets, performance logic, dashboards, and incentive frameworks aligned to strategic objectives.",
+      "action": [
+        "Supported Annual Operating Plan distribution models and performance measurement logic.",
+        "Worked with KPIs, balanced scorecards, dashboards, and incentive schemes across RBWM / PFS environments.",
+        "Translated business objectives into measurable structures for executive and management visibility."
+      ],
+      "result": "Contributed to structured business performance visibility, target allocation, and incentive logic at national corporate scale.",
+      "metrics": ["AOPs", "KPIs", "Balanced scorecards", "Incentive schemes", "Executive-facing performance support"]
+    },
+    {
+      "id": "inncomext-retail-import-expansion",
+      "title": "INNCOMEXT Retail Expansion and Import Operations",
+      "sourceCodes": ["V-02", "V-03", "V-04", "V-05", "V-06", "V-07", "V-08", "V-09", "V-10", "V-11", "V-12", "V-13", "V-14"],
+      "context": "Entrepreneurial retail and import business operating across multiple commercial points.",
+      "problem": "The business required sourcing, product development, import coordination, retail execution, and multi-site expansion discipline.",
+      "action": [
+        "Developed import and product sourcing workflows with supplier coordination in China.",
+        "Supported retail expansion across multiple locations and commercial environments.",
+        "Built practical operating control across product, sales, supply, and site execution."
+      ],
+      "result": "Converted entrepreneurial execution into a multi-site retail and import operation with repeatable commercial and operating practices.",
+      "metrics": ["Multi-site retail expansion", "China sourcing", "Imported product portfolio", "B2B / wholesale program"]
+    },
+    {
+      "id": "nixinx-systems-thinking",
+      "title": "NIXINX: Structured Systems and Product Thinking",
+      "sourceCodes": [],
+      "context": "Independent digital systems initiative used to structure business logic, workflows, and operational interfaces.",
+      "problem": "Many small and growing businesses lack structured systems that connect operations, content, customer journeys, and execution control.",
+      "action": [
+        "Designed a modular platform concept focused on structured business data, operational workflows, and reusable interfaces.",
+        "Applied operations thinking into product architecture, process design, and user-facing execution flows."
+      ],
+      "result": "Strengthened the link between business transformation experience and practical digital systems design.",
+      "metrics": ["Business systems thinking", "Workflow design", "Operational data structure"]
+    }
+  ],
+  "timeline": [
+    {
+      "id": "corporate-foundation",
+      "label": "Corporate Foundation",
+      "period": "2002–2015",
+      "title": "Business performance, systems, KPIs and incentives",
+      "description": "Built a foundation in banking operations, measurement, AOPs, dashboards, incentive logic, and executive-facing performance support.",
+      "sourceCodes": ["FI-03", "FI-06", "FI-08", "FI-18", "FI-19", "FI-20", "FI-21", "FI-22", "FI-23", "FI-24"]
+    },
+    {
+      "id": "entrepreneurial-execution",
+      "label": "Entrepreneurial Execution",
+      "period": "2015–2020",
+      "title": "Retail, imports, sourcing and expansion",
+      "description": "Applied commercial execution in a real business environment through import operations, China sourcing, B2B sales, and multi-site retail expansion.",
+      "sourceCodes": ["V-02", "V-03", "V-04", "V-13", "V-14"]
+    },
+    {
+      "id": "canada-transformation",
+      "label": "Canada Transformation",
+      "period": "2023–Present",
+      "title": "Multi-site operations and systems implementation",
+      "description": "Led hands-on operational transformation through systems, process structure, KPI visibility, infrastructure, pricing, and scalable execution.",
+      "sourceCodes": ["CH-01", "CH-08", "CH-09", "CH-10", "CH-20", "CH-23", "CH-27", "CH-28"]
+    },
+    {
+      "id": "digital-systems-extension",
+      "label": "Digital Systems Extension",
+      "period": "Current",
+      "title": "Structured product and systems thinking",
+      "description": "Extended the same operating mindset into digital product structure, business workflows, and AI-ready professional context.",
+      "sourceCodes": []
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "operations-transformation",
+      "title": "Operations Transformation",
+      "description": "Restructuring fragmented day-to-day operations into repeatable, scalable execution models."
+    },
+    {
+      "id": "systems-implementation",
+      "title": "Systems Implementation",
+      "description": "Introducing tools, workflows, and operating controls that improve visibility and coordination."
+    },
+    {
+      "id": "business-performance-kpis",
+      "title": "Business Performance & KPIs",
+      "description": "Designing performance logic that connects activity, targets, incentives, and management decisions."
+    },
+    {
+      "id": "data-decision-making",
+      "title": "Data & Decision Making",
+      "description": "Turning operational data into practical dashboards, metrics, and decision support."
+    },
+    {
+      "id": "multi-site-operations",
+      "title": "Multi-site Operations",
+      "description": "Coordinating execution across locations while maintaining consistency, responsiveness, and control."
+    }
+  ],
+  "aiContextSummary": "Alain Rivera is an Operations & Business Transformation professional. His experience combines corporate business performance at HSBC, entrepreneurial execution through INNCOMEXT, and hands-on multi-site operational transformation in Canada. His strongest positioning is the ability to turn unstructured operations into scalable systems using process design, systems implementation, KPI architecture, and disciplined execution. The AI assistant should answer only from the structured public profile and linked source history items, avoid confidential claims, avoid inflated language, and keep responses concise and interview-defensible."
+}
